@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+input {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.frota-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+@keyframes pulse-frota {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.08);
+      opacity: 0.85;
+    }
+  }
+  
+  .pulse-frota {
+    animation: pulse-frota 2s infinite;
+  }
+  
+  

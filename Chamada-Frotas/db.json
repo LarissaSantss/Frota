@@ -1,0 +1,177 @@
+{
+  "frotas": [
+    {
+      "id": "9625",
+      "frota": "F001",
+      "rampa": "2",
+      "box": "A",
+      "viagem": "123",
+      "status": "rechamada",
+      "chamada_em": "2025-08-03T19:32:14.761Z",
+      "arquivada": true
+    },
+    {
+      "id": "a7d6",
+      "frota": "F001",
+      "rampa": "2",
+      "box": "A",
+      "viagem": "123",
+      "status": "finalizada",
+      "chamada_em": "2025-08-03T19:54:30.100Z",
+      "arquivada": false
+    },
+    {
+      "id": "e6b5",
+      "frota": "123",
+      "rampa": "1",
+      "box": "1",
+      "viagem": "789",
+      "status": "carregando",
+      "chamada_em": "2025-08-03T22:20:46.378Z",
+      "arquivada": false,
+      "foi_rechamada": false
+    },
+    {
+      "id": "9cfa",
+      "frota": "456",
+      "rampa": "2",
+      "box": "2",
+      "viagem": "951",
+      "status": "finalizada",
+      "chamada_em": "2025-08-03T19:58:16.315Z",
+      "arquivada": false
+    },
+    {
+      "id": "9fae",
+      "frota": "222",
+      "rampa": "3",
+      "box": "3",
+      "viagem": "652",
+      "status": "em_espera",
+      "chamada_em": null,
+      "arquivada": false,
+      "foi_rechamada": false
+    },
+    {
+      "id": "d4f5",
+      "frota": "321",
+      "rampa": "5",
+      "box": "2",
+      "viagem": "123456",
+      "status": "finalizada",
+      "chamada_em": "2025-08-03T19:55:11.061Z",
+      "arquivada": false
+    },
+    {
+      "id": "767e",
+      "frota": "456",
+      "rampa": "1",
+      "box": "2",
+      "viagem": "652",
+      "status": "carregando",
+      "chamada_em": "2025-08-03T21:45:32.575Z",
+      "arquivada": false,
+      "foi_rechamada": true
+    },
+    {
+      "id": "94d7",
+      "frota": "456",
+      "rampa": "2",
+      "box": "2",
+      "viagem": "789",
+      "status": "carregando",
+      "chamada_em": "2025-08-03T21:45:37.150Z",
+      "arquivada": false,
+      "foi_rechamada": false
+    },
+    {
+      "id": "18cc",
+      "frota": "741",
+      "rampa": "258",
+      "box": "963",
+      "viagem": "741852",
+      "status": "finalizada",
+      "chamada_em": "2025-08-03T20:15:44.185Z",
+      "arquivada": false,
+      "foi_rechamada": true
+    },
+    {
+      "id": "2e66",
+      "frota": "852",
+      "rampa": "741",
+      "box": "963",
+      "viagem": "987654",
+      "status": "em_espera",
+      "chamada_em": null,
+      "arquivada": false
+    },
+    {
+      "id": "9d2a",
+      "frota": "987654",
+      "rampa": "8",
+      "box": "9",
+      "viagem": "852654",
+      "status": "em_espera",
+      "chamada_em": null,
+      "arquivada": false
+    },
+    {
+      "id": "8760",
+      "frota": "753",
+      "rampa": "1",
+      "box": "1",
+      "viagem": "789",
+      "status": "finalizada",
+      "chamada_em": "2025-08-03T19:53:06.286Z",
+      "arquivada": false
+    },
+    {
+      "id": "4931",
+      "frota": "627",
+      "rampa": "8",
+      "box": "7",
+      "viagem": "753951",
+      "status": "arquivada",
+      "chamada_em": "2025-08-03T20:15:46.945Z"
+    },
+    {
+      "id": "d609",
+      "frota": "937",
+      "rampa": "2",
+      "box": "9",
+      "viagem": "7514283",
+      "status": "carregando",
+      "chamada_em": "2025-08-03T20:08:50.219Z"
+    },
+    {
+      "id": "515d",
+      "frota": "8030",
+      "rampa": "6",
+      "box": "4",
+      "viagem": "741654123",
+      "status": "em_espera",
+      "chamada_em": null,
+      "foi_rechamada": false
+    },
+    {
+      "id": "cd8d",
+      "frota": "p5091",
+      "rampa": "5",
+      "box": "741",
+      "viagem": "95236854",
+      "status": "em_espera",
+      "chamada_em": null,
+      "foi_rechamada": false
+    },
+    {
+      "id": "9b84",
+      "frota": "8061s",
+      "rampa": "25",
+      "box": "2",
+      "viagem": "5312564",
+      "status": "em_espera",
+      "chamada_em": null,
+      "foi_rechamada": false
+    }
+  ]
+}

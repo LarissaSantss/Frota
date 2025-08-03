@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controle de Frotas - Operação</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-['Montserrat']">
+
+<!-- Cabeçalho -->
+<header class="bg-blue-800 text-white p-6 shadow-lg flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+    <div class="flex flex-col md:flex-row md:items-center md:space-x-4 w-full md:w-auto">
+      <div class="flex items-center space-x-4">
+        <img src="src/sada.png" alt="Logo Sada" class="h-16" />
+        <div>
+          <h1 class="text-3xl font-bold">Painel de Controle - Frotas</h1>
+          <p class="text-blue-200 text-sm">Gerencie, chame e acompanhe as frotas em tempo real</p>
+        </div>
+      </div>
+      <div class="flex mt-4 md:mt-0 md:ml-6 space-x-2">
+        <a href="painel.html" class="text-xs bg-white text-blue-800 px-3 py-1 rounded font-semibold hover:bg-blue-200 transition">🔧 Painel</a>
+        <a href="chamada.html" class="text-xs bg-white text-blue-800 px-3 py-1 rounded font-semibold hover:bg-blue-200 transition">📢 Chamada</a>
+      </div>
+    </div>
+  
+    <div class="text-right">
+      <div id="hora-atual" class="text-3xl font-bold leading-tight">--:--:--</div>
+      <div id="data-atual" class="text-sm text-blue-200">--/--/----</div>
+    </div>
+  </header>
+
+  
+
+  <main class="p-8 space-y-10">
+
+<!-- CONTADORES DE STATUS -->
+<section id="contadores" class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6 text-center text-white font-bold text-sm">
+    <div id="contador-em_espera" class="bg-yellow-500 p-3 rounded">🟡 Em Espera: 0</div>
+    <div id="contador-carregando" class="bg-green-500 p-3 rounded">🟢 Carregando: 0</div>
+    <div id="contador-rechamada" class="bg-blue-500 p-3 rounded">🔄 Rechamada: 0</div>
+    <div id="contador-finalizada" class="bg-gray-600 p-3 rounded">✅ Finalizadas: 0</div>
+    <div id="contador-arquivada" class="bg-purple-600 p-3 rounded">📦 Arquivadas: 0</div>
+  </section>
+  
+
+    <!-- FORMULÁRIO DE CADASTRO -->
+    <section class="bg-white p-6 rounded-lg shadow space-y-4">
+      <h2 class="text-2xl font-bold text-blue-800">Cadastrar Nova Frota</h2>
+
+      <form id="form-cadastro" class="grid grid-cols-1 md:grid-cols-5 gap-4" onsubmit="event.preventDefault(); cadastrarFrota();">
+        <input type="text" id="frota" placeholder="Número da Frota" class="p-2 border rounded" required />
+        <input type="text" id="rampa" placeholder="Rampa" class="p-2 border rounded" required />
+        <input type="text" id="box" placeholder="Box" class="p-2 border rounded" required />
+        <input type="text" id="viagem" placeholder="Nº da Viagem" class="p-2 border rounded" required />
+        <select id="status" class="p-2 border rounded" required>
+          <option value="em_espera">Em Espera</option>
+          <option value="carregando">Carregando</option>
+        </select>
+        <button type="submit" class="bg-green-600 text-white font-bold py-2 rounded hover:bg-green-700 md:col-span-5">Cadastrar Frota</button>
+      </form>
+    </section>
+
+    <!-- FROTAS AGRUPADAS POR STATUS -->
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6" id="painel-frotas">
+
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-yellow-600 mb-2">🟡 Em Espera</h3>
+        <div id="frotasEmEspera" class="space-y-3"></div>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">🟢 Carregando</h3>
+        <div id="frotasChamadas" class="space-y-3"></div>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">🔄 Rechamada</h3>
+        <div id="rechamada" class="space-y-3"></div>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">✅ Finalizadas</h3>
+        <div id="finalizada" class="space-y-3"></div>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-purple-600 mb-2">📦 Arquivadas</h3>
+        <div id="arquivada" class="space-y-3"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- SCRIPTS -->
+  <script src="js/controle.js"></script>
+</body>
+</html>
